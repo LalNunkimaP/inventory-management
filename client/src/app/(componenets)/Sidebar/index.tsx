@@ -17,6 +17,7 @@ import { setIsSidebarCollapsed } from "../../state";
 import { usePathname } from "next/navigation";
 import path from "path";
 import Link from "next/link";
+import Image from "next/image";
 
 interface SidebarLinkProps {
   href: string;
@@ -83,13 +84,26 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div>logo</div>
+        {/* <Image
+              src="inventorymanagement--s3.s3.ap-south-1.amazonaws.com/profile.jpg"
+              alt="profile"
+              width={50}
+              height={50}
+              className="rounded-full h-full object-cover"
+            /> */}
+        <Image
+          src="https://inventorymanagement--s3.s3.ap-south-1.amazonaws.com/logo.jpg"
+          alt="logo"
+          width={27}
+          height={27}
+          className="rounded w-8"
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
           } font-extrabold text-2xl`}
         >
-          EdStock
+          Lal Nunkima
         </h1>
 
         <button
@@ -140,7 +154,7 @@ const Sidebar = () => {
       </div>
       {/* Footer */}
       <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
-        <p className="text-center text-xs text-gray-500">&copy; 2024 EdStock</p>
+        <p className="text-center text-xs text-gray-500">&copy; 2024 Lal Nunkima</p>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { Bell, Link, Menu, Moon, Settings, Sun } from "lucide-react";
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "../../state";
+import Image from "next/image";
 const Navbar = () => {
   const dispatch = useAppDispatch();
 
@@ -63,8 +64,14 @@ const Navbar = () => {
           </div>
           <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3"></hr>
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-9 h-9">image</div>
-            <div className="font-semibold">Ed Route</div>
+            <Image
+              src="https://inventorymanagement--s3.s3.ap-south-1.amazonaws.com/profile.jpg"
+              alt="profile"
+              width={50}
+              height={50}
+              className="rounded-full h-full object-cover"
+            />
+            <div className="font-semibold">Lal Nunkima</div>
           </div>
         </div>
         <Link href="/settings">
