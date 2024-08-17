@@ -92,7 +92,7 @@ const Sidebar = () => {
               className="rounded-full h-full object-cover"
             /> */}
         <Image
-          src="https://inventorymanagement--s3.s3.ap-south-1.amazonaws.com/logo.jpg"
+          src="https://inventorymanagement--s3.s3.ap-south-1.amazonaws.com/logo.png"
           alt="logo"
           width={27}
           height={27}
